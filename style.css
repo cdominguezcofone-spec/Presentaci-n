@@ -1,0 +1,26 @@
+body {
+    background-color: #0f172a;
+    color: #00f5ff; /* Color Neón */
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.slide {
+    display: none;
+    padding: 50px;
+    border: 2px solid #00f5ff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 245, 255, 0.3);
+    background: rgba(30, 41, 59, 0.8);
+}
+
+.slide.active {
+    display: block;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
